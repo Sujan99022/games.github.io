@@ -213,7 +213,7 @@ body::-webkit-scrollbar{
 }
 .alert-text{
     position: relative;
-    top: 120px;
+    top: 100px;
     bottom: 0;
     z-index: 999999;
     color: white;
