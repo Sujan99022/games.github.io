@@ -11,25 +11,58 @@
     <link rel="icon" href="https://wallpaperaccess.com/full/2211726.jpg" type="image/icon type">
     <script src="https://kit.fontawesome.com/726b0b9ea4.js" crossorigin="anonymous"></script>
     <script defer src="main.js"></script>
-    <link rel="stylesheet" href="main.css">  
+    <script defer src="butter.js"></script>
+    <link rel="stylesheet" href="main.css">
 </head>
   <body onload="MyFunction()">
- 
     <div class="sec" id="load">
-        <i style="color: rgb(242, 33, 10); text-shadow: 2px 2px 4px rgba(248, 0, 0, 0.981);" class="fa-solid fa-biohazard fa-spin fa-4x"></i>
+        <img style="width: 200px;" src="images/red-load.gif">
       </div>
 
-      <div class="container">
- <div class="count">
-        <div class="mr-2">Number of Views :</div>
-        <div class="website-counter"></div>
- </div>
-        <nav>
-            <p class="h4 text-center py-3 mt-4 mt-md-1 game-font"><span style="color: rgb(255, 0, 255);">E</span>asy <span style="color: red;">PC</span> <span style="color: rgb(255, 0, 255);">G</span>ames <span style="color: rgb(255, 6, 255);">E</span>xplorer</p>
-        </nav>
-        <p class="text-lead text-center"><span style="color:rgb(234, 45, 228);">Note!</span>Here we provide the direct download links(We won't use any link shortner. to provide the single click download option)</p>
-       <div class="row">
-        <div class="col-12 col-lg-4 col-md-6 my-3">
+
+      <div id="alert" class="alert alert-dark alert-dismissible fade show" role="alert">
+        <span class="alert-text"><strong>Note !</strong> <p class="text-lead text-center">Here we provide the direct download links(We won't use any link shortner. to provide the single click download option)</p>
+        <p class="text-center"><span style="color: rgb(2, 252, 2);">utorrent</span> is mandatory to download the follwing games</p></span>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span class="text-danger" aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+
+
+      <div id="butter">
+<nav class="navbar navbar-expand-lg navbar-light p-0 px-lg-4" id="main-nav">
+  <a class="navbar-brand p-3 p-lg-2" href="#"> <p class="h4 text-center game-font text-white"><span style="color: #ff0000;">E</span>asy <span style="color: red;">PC</span> <span style="color: #ff0000;">G</span>ames <span style="color: #ff0000;">E</span>xplorer</p></a>
+  <p id="menu-button" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span style="color: white;" class="navbar-toggler-icon"><img id="menu" src="images/menu.gif"></span>
+  </p>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="count">
+      <div class="mr-2">Views :</div>
+      <div class="website-counter"></div>
+     </div>
+      <for class="form-inline ml-lg-auto p-2 p-lg-0 my-4 my-lg-0" id="se">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text p-0" style="overflow: hidden; background: rgb(60, 60, 60);" id="basic-addon1"><img style="width: 42px; padding:0px 5px;" src="images/search3.gif"></span>
+          </div>
+          <input type="text" style="width:300px; background: rgb(55, 55, 55);" id="search-item" onkeydown="search()" class="form-control" placeholder="Search ..." aria-label="Search" aria-describedby="basic-addon1">
+        </div>
+      </for>
+  </div>
+</nav>
+        <div class="container2 py-3" id="bg-2">
+          <div class="container1">
+            <div class="c1">
+                <P class="welcome display-4">WELCOME</P>
+                <span class="welcome2 text-center">scroll to see the  search results</span>
+        <div class="center-scroll text-center">
+          <img style="width:100px;" src="images/sd6.gif">
+        </div>  
+      </div>
+        </div>
+        <div class="container" style="display: flex; flex-wrap:wrap;">
+        <div class="col-12 col-lg-4 col-md-6 my-3 con">
             <div class="card" style="width: 100%; display: inline-block;">
                 <img class="card-img-top" src="https://i1.imageban.ru/out/2022/02/19/2ec730bdda9c173d63d981ae6c1f3af2.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -62,8 +95,9 @@
                     Type = Action/Fighting
                 </div>
               </div>          
-            </div>   <!--End-->
-        <div class="col-12 col-lg-4 col-md-6 my-3">
+            </div> 
+           <!--End-->
+        <div class="col-12 col-lg-4 col-md-6 my-3 con">
         <div class="card" style="width: 100%; display: inline-block;">
             <img class="card-img-top" src="https://i4.imageban.ru/out/2021/09/20/ac78fb452e33b1bb4b49615c79c73f44.jpg" alt="Card image cap">
             <div class="card-body">
@@ -95,8 +129,8 @@
                 Type = Shooting
             </div>
           </div>          
-        </div>   <!--End-->
-        <div class="col-12 col-lg-4 col-md-6 my-3">
+        </div>  <!--End-->
+        <div class="col-12 col-lg-4 col-md-6 my-3 con">
         <div class="card" style="width: 100%; display: inline-block;">
             <img class="card-img-top" src="https://i6.imageban.ru/out/2022/08/13/d8a6e759722f3c703990dcf3765d400b.jpg" alt="Card image cap">
             <div class="card-body">
@@ -130,7 +164,7 @@
             </div>
           </div>          
         </div>   <!--End-->
-        <div class="col-12 col-lg-4 col-md-6 my-3">
+        <div class="col-12 col-lg-4 col-md-6 my-3 con">
             <div class="card" style="width: 100%; display: inline-block;">
                 <img class="card-img-top" src="https://i4.imageban.ru/out/2022/07/27/595446f1f7b053b0cb8283c2f55a077d.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -164,7 +198,7 @@
                 </div>
               </div> 
         </div> <!--End-->
-        <div class="col-12 col-lg-4 col-md-6 my-3">
+        <div class="col-12 col-lg-4 col-md-6 my-3 con">
             <div class="card" style="width: 100%; display: inline-block;">
                 <img class="card-img-top" src="https://i6.imageban.ru/out/2022/03/20/a10df775d0ae65374013c541d962b0a2.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -196,7 +230,7 @@
                 </div>
               </div> 
         </div> <!--End-->
-        <div class="col-12 col-lg-4 col-md-6 my-3">
+        <div class="col-12 col-lg-4 col-md-6 my-3 con">
             <div class="card" style="width: 100%; display: inline-block;">
                 <img class="card-img-top" src="https://i2.imageban.ru/out/2022/08/03/0fbaf4e3f5198847fca52b377c30678c.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -228,7 +262,7 @@
                 </div>
               </div> 
         </div> <!--End-->
-        <div class="col-12 col-lg-4 col-md-6 my-3">
+        <div class="col-12 col-lg-4 col-md-6 my-3 con">
             <div class="card" style="width: 100%; display: inline-block;">
                 <img class="card-img-top" src="https://i4.imageban.ru/out/2022/02/05/0da63379cd53381c050d14a9cede1280.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -261,7 +295,7 @@
                 </div>
               </div> 
         </div> <!--End-->
-        <div class="col-12 col-lg-4 col-md-6 my-3">
+        <div class="col-12 col-lg-4 col-md-6 my-3 con">
             <div class="card" style="width: 100%; display: inline-block;">
                 <img class="card-img-top" src="https://i4.imageban.ru/out/2022/08/02/3707315053bd40f5633e3b435c63ef9e.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -292,7 +326,7 @@
                 </div>
               </div> 
         </div> <!--End-->
-        <div class="col-12 col-lg-4 col-md-6 my-3">
+        <div class="col-12 col-lg-4 col-md-6 my-3 con">
             <div class="card" style="width: 100%; display: inline-block;">
                 <img class="card-img-top" src="https://i2.imageban.ru/out/2022/08/02/3a2074d7102f23fc46601f744c41bd26.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -323,7 +357,7 @@
                 </div>
               </div> 
         </div> <!--End-->
-        <div class="col-12 col-lg-4 col-md-6 my-3">
+        <div class="col-12 col-lg-4 col-md-6 my-3 con">
             <div class="card" style="width: 100%; display: inline-block;">
                 <img class="card-img-top" src="https://i6.imageban.ru/out/2022/08/27/9b482fa24910342a42f23a8571188c48.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -355,7 +389,7 @@
                 </div>
               </div> 
         </div> <!--End-->
-        <div class="col-12 col-lg-4 col-md-6 my-3">
+        <div class="col-12 col-lg-4 col-md-6 my-3 con">
             <div class="card" style="width: 100%; display: inline-block;">
                 <img class="card-img-top" src="https://i1.imageban.ru/out/2021/09/24/af6a2d0f7b3ef50f0e9c80f98422e725.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -388,7 +422,7 @@
                 </div>
               </div> 
         </div> <!--End-->
-        <div class="col-12 col-lg-4 col-md-6 my-3">
+        <div class="col-12 col-lg-4 col-md-6 my-3 con">
             <div class="card" style="width: 100%; display: inline-block;">
                 <img class="card-img-top" src="https://i5.imageban.ru/out/2021/10/06/bec976ab4fe7b84e72cbe33ea2115a1c.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -421,7 +455,7 @@
                 </div>
               </div> 
         </div> <!--End-->
-        <div class="col-12 col-lg-4 col-md-6 my-3">
+        <div class="col-12 col-lg-4 col-md-6 my-3 con">
             <div class="card" style="width: 100%; display: inline-block;">
                 <img class="card-img-top" src="https://i2.imageban.ru/out/2021/11/23/c7d69e1e150cda5442160ed744986d78.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -453,7 +487,7 @@
                 </div>
               </div> 
         </div> <!--End-->
-        <div class="col-12 col-lg-4 col-md-6 my-3">
+        <div class="col-12 col-lg-4 col-md-6 my-3 con">
             <div class="card" style="width: 100%; display: inline-block;">
                 <img class="card-img-top" src="https://i2.imageban.ru/out/2022/08/22/05159aa0ef9496ded4cfcc4d8220213f.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -487,7 +521,7 @@
                 </div>
               </div> 
         </div> <!--End-->
-        <div class="col-12 col-lg-4 col-md-6 my-3">
+        <div class="col-12 col-lg-4 col-md-6 my-3 con">
             <div class="card" style="width: 100%; display: inline-block;">
                 <img class="card-img-top" src="https://i5.imageban.ru/out/2022/08/21/3b184b05b9687663fde871ee5a0a4670.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -518,7 +552,7 @@
                 </div>
               </div> 
         </div> <!--End-->
-        <div class="col-12 col-lg-4 col-md-6 my-3">
+        <div class="col-12 col-lg-4 col-md-6 my-3 con">
             <div class="card" style="width: 100%; display: inline-block;">
                 <img class="card-img-top" src="https://i2.imageban.ru/out/2021/07/30/ab10dcc1882eee9dc8c8429ef8e4eb65.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -552,7 +586,7 @@
                 </div>
               </div> 
         </div> <!--End-->
-        <div class="col-12 col-lg-4 col-md-6 my-3">
+        <div class="col-12 col-lg-4 col-md-6 my-3 con">
             <div class="card" style="width: 100%; display: inline-block;">
                 <img class="card-img-top" src="https://i2.imageban.ru/out/2022/02/25/c1011b00acdf486d8ceef2cc8b1a6767.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -589,7 +623,7 @@
 
 
 
-        <div class="col-12 col-lg-4 col-md-6 my-3">
+        <div class="col-12 col-lg-4 col-md-6 my-3 con">
             <div class="card" style="width: 100%; display: inline-block;">
                 <img class="card-img-top" src="https://i6.imageban.ru/out/2022/08/08/40d2a9504b8251643b068b8cf8a74a49.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -623,7 +657,7 @@
                 </div>
               </div> 
         </div> <!--End-->
-        <div class="col-12 col-lg-4 col-md-6 my-3">
+        <div class="col-12 col-lg-4 col-md-6 my-3 con">
             <div class="card" style="width: 100%; display: inline-block;">
                 <img class="card-img-top" src="https://i5.imageban.ru/out/2021/09/08/5bfd2cfa91af45de8e0655218fe02af9.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -656,7 +690,7 @@
                 </div>
               </div> 
         </div> <!--End-->
-        <div class="col-12 col-lg-4 col-md-6 my-3">
+        <div class="col-12 col-lg-4 col-md-6 my-3 con">
             <div class="card" style="width: 100%; display: inline-block;">
                 <img class="card-img-top" src="https://i5.imageban.ru/out/2022/08/01/d51a875e7ede2dfaad2d188dab4488c5.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -689,7 +723,7 @@
                 </div>
               </div> 
         </div> <!--End-->
-        <div class="col-12 col-lg-4 col-md-6 my-3">
+        <div class="col-12 col-lg-4 col-md-6 my-3 con">
             <div class="card" style="width: 100%; display: inline-block;">
                 <img class="card-img-top" src="https://i2.imageban.ru/out/2021/10/03/9ad715725c9342598a7c544be1dcc5ff.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -724,7 +758,7 @@
         </div> <!--End-->
 
 
-        <div class="col-12 col-lg-4 col-md-6 my-3">
+        <div class="col-12 col-lg-4 col-md-6 my-3 con">
             <div class="card" style="width: 100%; display: inline-block;">
                 <img class="card-img-top" src="https://i7.imageban.ru/out/2022/07/23/1b3d33baaed5565f3a88def7affb2fb4.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -757,7 +791,7 @@
                 </div>
               </div> 
         </div> <!--End-->
-        <div class="col-12 col-lg-4 col-md-6 my-3">
+        <div class="col-12 col-lg-4 col-md-6 my-3 con">
             <div class="card" style="width: 100%; display: inline-block;">
                 <img class="card-img-top" src="https://i5.imageban.ru/out/2021/11/13/4e9836b6111a572bef2f43048c7ef4c6.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -789,7 +823,7 @@
                 </div>
               </div> 
         </div> <!--End-->
-        <div class="col-12 col-lg-4 col-md-6 my-3">
+        <div class="col-12 col-lg-4 col-md-6 my-3 con">
             <div class="card" style="width: 100%; display: inline-block;">
                 <img class="card-img-top" src="https://i3.imageban.ru/out/2022/07/19/8d22f248fe66ff947ddb441c9bc9c825.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -823,7 +857,7 @@
                 </div>
               </div> 
         </div> <!--End-->
-        <div class="col-12 col-lg-4 col-md-6 my-3">
+        <div class="col-12 col-lg-4 col-md-6 my-3 con">
             <div class="card" style="width: 100%; display: inline-block;">
                 <img class="card-img-top" src="https://i7.imageban.ru/out/2022/07/19/8a3e1174ec1553cedc0048c3c6f46f40.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -855,7 +889,7 @@
                 </div>
               </div> 
         </div> <!--End-->
-        <div class="col-12 col-lg-4 col-md-6 my-3">
+        <div class="col-12 col-lg-4 col-md-6 my-3 con">
             <div class="card" style="width: 100%; display: inline-block;">
                 <img class="card-img-top" src="https://i6.imageban.ru/out/2022/07/09/c1a54788169012155cca079269ea1c6f.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -888,7 +922,7 @@
                 </div>
               </div> 
         </div> <!--End-->
-        <div class="col-12 col-lg-4 col-md-6 my-3">
+        <div class="col-12 col-lg-4 col-md-6 my-3 con">
             <div class="card" style="width: 100%; display: inline-block;">
                 <img class="card-img-top" src="https://i1.imageban.ru/out/2022/07/09/043e92d0863056c86990c6a6df6bdbc7.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -921,7 +955,7 @@
                 </div>
               </div> 
         </div> <!--End-->
-        <div class="col-12 col-lg-4 col-md-6 my-3">
+        <div class="col-12 col-lg-4 col-md-6 my-3 con">
             <div class="card" style="width: 100%; display: inline-block;">
                 <img class="card-img-top" src="https://i7.imageban.ru/out/2022/07/09/249373c6e7ca370b351a3d6c042635bf.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -954,7 +988,7 @@
                 </div>
               </div> 
         </div> <!--End-->
-        <div class="col-12 col-lg-4 col-md-6 my-3">
+        <div class="col-12 col-lg-4 col-md-6 my-3 con">
             <div class="card" style="width: 100%; display: inline-block;">
                 <img class="card-img-top" src="https://i5.imageban.ru/out/2022/02/04/7aae74f7b4ed89a891e528aac1eab160.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -988,7 +1022,7 @@
                 </div>
               </div> 
         </div> <!--End-->
-        <div class="col-12 col-lg-4 col-md-6 my-3">
+        <div class="col-12 col-lg-4 col-md-6 my-3 con">
             <div class="card" style="width: 100%; display: inline-block;">
                 <img class="card-img-top" src="https://play-lh.googleusercontent.com/1Y07pO0sfIwDucBw-Zcc-29e99ou7TiEL9jGe665wJHEsAAapBpHRYNz6OjlmV9Omq-s" alt="Card image cap">
                 <div class="card-body">
@@ -1021,7 +1055,7 @@
                 </div>
               </div> 
         </div> <!--End-->
-        <div class="col-12 col-lg-4 col-md-6 my-3">
+        <div class="col-12 col-lg-4 col-md-6 my-3 con">
             <div class="card" style="width: 100%; display: inline-block;">
                 <img class="card-img-top" src="https://i4.imageban.ru/out/2021/11/16/2b08b22007aab887077fddef29d03227.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -1055,7 +1089,7 @@
                 </div>
               </div> 
         </div> <!--End-->
-        <div class="col-12 col-lg-4 col-md-6 my-3">
+        <div class="col-12 col-lg-4 col-md-6 my-3 con">
             <div class="card" style="width: 100%; display: inline-block;">
                 <img class="card-img-top" src="https://i6.imageban.ru/out/2022/01/28/db236dea40386161987faec730d8143b.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -1088,7 +1122,7 @@
                 </div>
               </div> 
         </div> <!--End-->
-        <div class="col-12 col-lg-4 col-md-6 my-3">
+        <div class="col-12 col-lg-4 col-md-6 my-3 con">
             <div class="card" style="width: 100%; display: inline-block;">
                 <img class="card-img-top" src="https://i4.imageban.ru/out/2021/11/26/84626b5ea6a5dfce83d34fb1dc5019ad.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -1121,15 +1155,12 @@
                 </div>
               </div> 
         </div> <!--End-->
+        
 
 
 
-
-
-
-
-
-        </div>
+      </div>
+      </div>
       </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -1138,9 +1169,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script>
         var preloader=document.getElementById('load');
-        function MyFunction(){
+        
+          setTimeout(function MyFunction(){
           preloader.style.display='none';
-        }
+          },4000);
       </script>  
 </body>
 </html>
