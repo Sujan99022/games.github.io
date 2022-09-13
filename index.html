@@ -14,7 +14,7 @@
     <script defer src="butter.js"></script>
     <link rel="stylesheet" href="main.css">
 </head>
-  <body onload="MyFunction()">
+  <body onload="MyFunction()" style="scroll-behavior: smooth;">
     <div class="sec" id="load">
         <img style="width: 200px;" src="images/red-load.gif">
       </div>
@@ -28,8 +28,6 @@
         </button>
       </div>
 
-
-
       <div id="butter">
 <nav class="navbar navbar-expand-lg navbar-light p-0 px-lg-4" id="main-nav">
   <a class="navbar-brand p-3 p-lg-2" href="#"> <p class="h4 text-center game-font text-white"><span style="color: #ff0000;">E</span>asy <span style="color: red;">PC</span> <span style="color: #ff0000;">G</span>ames <span style="color: #ff0000;">E</span>xplorer</p></a>
@@ -41,6 +39,9 @@
       <div class="mr-2">Views :</div>
       <div class="website-counter"></div>
      </div>
+     <div class="sup text-center">
+      <a href="#support">request a game</a>
+     </div>
       <for class="form-inline ml-lg-auto p-2 p-lg-0 my-4 my-lg-0" id="se">
         <div class="input-group">
           <div class="input-group-prepend">
@@ -51,12 +52,16 @@
       </for>
   </div>
 </nav>
-        <div class="container2 py-3" id="bg-2">
+        <div class="container2 pt-3" id="bg-2">
           <div class="container1">
             <div class="c1">
                 <P class="welcome display-4">WELCOME</P>
                 <span class="welcome2 text-center">scroll to see the  search results</span>
-        <div class="center-scroll text-center">
+                <div class="request text-center">
+                  <img style="width: 60px;" src="images/reuest.gif">
+                  <p class="text-center"><a href="#support">Request<br> a game</a></p>
+                </div>
+                <div class="center-scroll text-center">
           <img style="width:100px;" src="images/sd6.gif">
         </div>  
       </div>
@@ -1157,6 +1162,33 @@
         </div> <!--End-->
         
       </div>
+      <footer class="mt-5 p-0" id="support">
+        <div class="footer-center text-center">
+          <p class="mb-0 py-4"><span style="color: red; text-shadow: 2ps 2px 2px rgba(0, 0, 0, 0.466);">R</span>equest <span style="color: red;">g</span>ame</p>
+        </div>
+        <div class="footer-center2 text-center">
+          <p>YOur request will be processed within 24 hours</p>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2 col-0"></div>
+            <div class="col-md-8">
+                 <form class="py-4" action="https://formsubmit.co/5d1e07ee97a1e33849386ecf8f34a157" method="post">
+                  <label class="form-label" for="gameName">GAME NAME</label>
+                  <input type="text" name="gameName" class="form-control" id="gameName" placeholder="ENTER HERE" required>
+                  <label class="form-label mt-3" for="mail">E-MAIL</label>
+                  <input type="email" name="mail" class="form-control" id="mail" placeholder="ENTER HERE" required>
+                  <label for="suggestion" class="form-label mt-3">REPORT BUG/ERROR(optional)</label>
+                  <textarea name="suggestion" class="form-control" id="suggestion" cols="10" rows="10" minlength="10"></textarea>
+                <div class="center text-center mt-4">
+                     <button type="submit" class="btn btn-danger px-3">SUBMIT</button>
+                </div> 
+                </form>
+            </div>
+            <div class="col-md-2 col-0"></div>
+          </div>
+        </div>
+      </footer>
       </div>
       </div>
     <!-- Optional JavaScript -->

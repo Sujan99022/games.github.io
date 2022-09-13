@@ -1,6 +1,5 @@
 body{
 color: white;
-text-shadow: 2px 2px 2px black;
 }
 /* ::-webkit-scrollbar{
     display: none;
@@ -40,36 +39,33 @@ body::-webkit-scrollbar{
     background:linear-gradient(to top,rgba(0, 0, 0, 0.474),rgba(0, 0, 0, 0.167));
 }
 .game-font{
-    font-family: fantasy;
+    /* font-family: fantasy; */
     letter-spacing: .1rem;
     text-transform: uppercase;
 }
+@media (max-width:900px) {
+    .game-font{
+        font-size: 20px;
+    }
+}
 .count{
-    border-bottom: 2px solid rgb(255, 255, 255);
     margin: 0 auto;
     padding: 15px 0px;
     display: flex;
     opacity: 0;
     justify-content: center;
     align-items: center;
+    text-transform: uppercase;
     letter-spacing: .2rem;
     line-height: 1.7rem;
 }
 @media (max-width:700px) {
     .count{
-        opacity: 1;
+    display: none;
        left: 0;
        right: 0;
        top: 5px;
     }
-}
-.website-counter{
-    text-shadow: 2px 2px 2px rgba(255, 0, 0, 0.586);
-    line-height: 1.7rem;
-    font-weight: 600;
-    color: rgb(255, 0, 0);
-    letter-spacing: .2rem;
-    animation: counter 3s linear 0s infinite normal forwards running;
 }
 #load{
     position: fixed;
@@ -103,7 +99,7 @@ body::-webkit-scrollbar{
     left: 0;
     z-index: 999;
     background: black;
-    box-shadow: 0px 2px 16px black;
+    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.699);
 }
 #menu-button{
     margin-right: 10px;
@@ -164,7 +160,7 @@ body::-webkit-scrollbar{
 @media (max-width:700px) {
     .center-scroll{
         position: relative;
-        top: 150px;
+        top: 140px;
         right: 0;
         left: 0;
     }   
@@ -246,4 +242,68 @@ body::-webkit-scrollbar{
     justify-content: center;
     align-items: center;
     text-shadow: 4px 4px 5px rgb(0, 0, 0);
+}
+.request{
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    line-height: 1.2rem;
+    font-size: 15px;
+    z-index: 999999;
+}
+.request a{
+    color: white;
+    text-decoration: none;
+    transition-duration: 1s;
+}
+.request a:hover{
+    color: rgb(228, 235, 18);
+}
+@media (max-width:700px) {
+    .request{
+        display: none;
+    }
+}
+footer{
+    background: rgba(0, 0, 0, 0.304);
+}
+.footer-center p{
+   letter-spacing: .5rem;
+   text-transform: uppercase;
+   font-size: 40px;
+}
+form label{
+    letter-spacing: .2rem;
+}
+form input{
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.415);
+}
+form textarea{
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.455);
+}
+form button{
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.319);
+    letter-spacing: .2rem;
+}
+.footer-center2 p{
+    letter-spacing: .2rem;
+    line-height: 1.7rem;
+    text-transform: uppercase;
+}
+.sup a{
+    letter-spacing: .2rem;
+    line-height: 1.4rem;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid rgb(255, 0, 0);
+    padding-bottom: 2px;
+    display: none;
+}
+@media (max-width:991px) {
+    .sup a{
+        display: block;
+    }
 }
