@@ -192,10 +192,10 @@ body::-webkit-scrollbar{
     }
     .welcome{
         font-size: 40px;
-        top: 200px !important;
+        top: 180px !important;
     }
     .welcome2{
-        top: 200px !important;
+        top: 180px !important;
     }
 }
 #alert{
