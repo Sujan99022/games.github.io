@@ -29,4 +29,7 @@ counterContainer.innerHTML = visitCount;
                     }
                 }
             }
-        }
+}
+        
+
+

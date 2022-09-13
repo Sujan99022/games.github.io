@@ -66,6 +66,9 @@ body::-webkit-scrollbar{
        right: 0;
        top: 5px;
     }
+    ::-webkit-scrollbar{
+        display: none;
+    }
 }
 #load{
     position: fixed;
