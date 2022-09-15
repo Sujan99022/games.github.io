@@ -10,11 +10,16 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="icon" href="https://www.clipartmax.com/png/small/317-3177394_gaming-influencer-icon.png" type="image/icon type">
     <script src="https://kit.fontawesome.com/726b0b9ea4.js" crossorigin="anonymous"></script>
-    <script defer src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js" defer></script>
+    <script defer src="main.js" defer></script>
     <script defer src="butter.js"></script>
     <link rel="stylesheet" href="main.css">
 </head>
   <body onload="MyFunction()" style="scroll-behavior: smooth;">
+    
+    <progress max="100" value="0"></progress>
+    
     <div class="sec" id="load">
         <img style="width: 200px;" src="images/red-load.gif">
       </div>
@@ -60,12 +65,14 @@
                 <div class="request text-center">
                   <img style="width: 60px;" src="images/reuest.gif">
                   <p class="text-center"><a href="#support">Request<br> a game</a></p>
+                  
                 </div>
                 <div class="center-scroll text-center">
           <img style="width:100px;" src="images/sd6.gif">
         </div>  
       </div>
         </div>
+        
         <div class="container" style="display: flex; flex-wrap:wrap;">
         <div class="col-12 col-lg-4 col-md-6 my-3 con">
             <div class="card" style="width: 100%; display: inline-block;">
@@ -1976,6 +1983,8 @@
           function MyFunction(){
           preloader.style.display='none';
           }
+
+          butter.init({cancelOnTouch: true});
       </script>  
 </body>
 </html>
