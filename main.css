@@ -367,3 +367,14 @@ form button {
         padding-bottom: 15px;
     } 
 } */
+
+/* .con {
+    background: rgba(0, 0, 0, 0.296);
+  }
+  
+  @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .con {
+      -webkit-backdrop-filter: blur(5px);
+      backdrop-filter: blur(5px);
+    }
+  } */
