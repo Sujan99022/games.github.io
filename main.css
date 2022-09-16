@@ -25,18 +25,18 @@ body::-webkit-scrollbar{
 	background: red; 
 }
 .card{
-    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.582);
-    background: rgba(0, 0, 0, 0.323);
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.381);
+    background: rgba(0, 0, 0, 0.164);
 }
 .card-body,.list-group-item{
-    background: rgba(0, 0, 0, 0.323);
+    background: rgba(0, 0, 0, 0.155);
 }
 .card-link{
     color: rgb(0, 255, 26);
 }
 .card-footer{
     color: rgb(255, 255, 255);
-    background:linear-gradient(to top,rgba(0, 0, 0, 0.474),rgba(0, 0, 0, 0.167));
+    background:linear-gradient(to top,rgba(0, 0, 0, 0.138),rgba(0, 0, 0, 0.167));
 }
 .game-font{
     /* font-family: fantasy; */
@@ -310,6 +310,12 @@ form button{
         display: block;
     }
 }
-
+@media (max-width:700px) {
+    .con{
+        box-shadow: 2px 2px 26px rgba(0, 0, 0, 0.152);
+        padding-top: 15px;
+        padding-bottom: 15px;
+    } 
+}
 
   
