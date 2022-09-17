@@ -33,8 +33,13 @@ body::-webkit-scrollbar {
 .card {
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.215);
     background: rgba(0, 0, 0, 0.164);
+    cursor: pointer;
+    /* transform-style: preserve-3d;
+    perspective: 1000px; */
 }
-
+/* .card-title{
+    transform: translateZ(60px);
+} */
 .card-body,
 .list-group-item {
     background: rgba(0, 0, 0, 0.155);
@@ -42,6 +47,9 @@ body::-webkit-scrollbar {
 
 .card-link {
     color: rgb(0, 255, 26);
+}
+.card-link:hover{
+    color: rgb(242, 1, 255);
 }
 
 .card-footer {

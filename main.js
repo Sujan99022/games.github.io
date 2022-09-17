@@ -36,5 +36,28 @@ counterContainer.innerHTML = visitCount;
         preloader.style.display='none';
         }
 
-       
+        gsap.from('.b1', { duration: 4, delay: 1.2, y: '-100vh', ease: "power-1" });
+        gsap.from('.b2', { duration: 4, delay: 1.2, y: '100vh', ease: "power.in" });
+        gsap.from('.b3', { duration: 1.2, delay: 1.2, x: '-100vw', ease: "power.in" });
+        gsap.from('.b4', { duration: 1.2, delay: 1.2, x: '100vw', ease: "power.in" });
+        gsap.from('.b5', { duration: .6, delay: 1, y: '-100vh', ease: "power.in" });
+        gsap.from('.b6', { duration: 1.8, delay: 1.2, y: '100vh', ease: "power.in" });
+        gsap.from('.b7', { duration: 1.1, delay: 1, y: '-100vh', ease: "power.in" });
+        gsap.fromTo('.b8', { opacity: 0, scale: 0, rotation: 0 }, { duration: 1, opacity: 1, scale: 1, rotation: 0 })
+        gsap.from('.all1', { duration: 6, delay: 3, y: '100vh', ease: "elastic" });
+        gsap.from('.all2', { duration: 6, delay: 3.2, y: '100vh', ease: "elastic" });
+        gsap.from('.all3', { duration: 6, delay: 3.4, y: '100vh', ease: "elastic" });
+        
+      
+// gsap.from(".card", {
+//   scrollTrigger: {
+//     trigger: '.card',
+//     start: "center center",
+//     pin: true,
+//     ease:"bounce"
+//   },
+//   y:500
+//         })
+        
+        
         
