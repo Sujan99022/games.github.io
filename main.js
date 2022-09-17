@@ -29,5 +29,12 @@ counterContainer.innerHTML = visitCount;
                     }
                 }
             }
-}
+        }
+
+        var preloader=document.getElementById('load');
+        function MyFunction(){
+        preloader.style.display='none';
+        }
+
+       
         
