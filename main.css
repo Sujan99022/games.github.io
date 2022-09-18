@@ -320,7 +320,10 @@ body::-webkit-scrollbar {
 }
 
 footer {
-    background: rgba(0, 0, 0, 0.304);
+    background: url('images/footer.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .footer-center p {
