@@ -106,7 +106,7 @@ body::-webkit-scrollbar {
     left: 0;
     height: 100vh;
     animation: load 4s;
-    background-color: #c20000;
+    background-color: rgb(0, 0, 0);
     z-index: 999999999;
 }
 
