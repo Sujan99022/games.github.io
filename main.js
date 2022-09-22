@@ -49,7 +49,8 @@ counterContainer.innerHTML = visitCount;
         gsap.from('.all3', { duration: 6, delay: 3.4, y: '100vh', ease: "elastic" });
         gsap.from('#bg-2', { duration: 1, delay: 1, y: '100vh', ease: "power.in" });
         
-      
+        // gsap.fromTo('.left', { opacity: 0, scale: 1, rotationX: 720 }, { duration: 3,delay:3, opacity: 1, scale: 1, rotationX: 0 })
+        
 // gsap.from(".card", {
 //   scrollTrigger: {
 //     trigger: '.card',
@@ -60,5 +61,5 @@ counterContainer.innerHTML = visitCount;
 //   y:500
 //         })
         
-        
+      
         
