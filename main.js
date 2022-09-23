@@ -61,5 +61,3 @@ counterContainer.innerHTML = visitCount;
 //   y:500
 //         })
         
-      
-        
