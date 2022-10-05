@@ -433,12 +433,12 @@
   
      50% {
        transform: translate3d(200px,0,0);
-       color: black;
+       color: rgb(255, 255, 255);
      }
   
      99% {
        transform: translate3d(-200px,0,0);
-       color: black;
+       color: rgb(255, 255, 255);
      }
   
      100% {

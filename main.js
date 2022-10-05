@@ -45,7 +45,7 @@ var visitCount = localStorage.getItem("page_view");
         gsap.from('#w1', { duration: 1.8, delay: 1.2, y: '-100vh', ease: "power.in" });
         gsap.from('.b7', { duration: 1.1, delay: 1, y: '-100vh', ease: "power.in" });
         gsap.fromTo('.b8', { opacity: 0, scale: 0, rotation: 0 }, { duration: 3, opacity: 1, scale: 1, rotation: 0 })
-        gsap.from('.all1', { duration: 1, delay: 2, y: '-100vh', ease: "power-3" });
+        gsap.from('.all1', { duration: 1, delay: 2, y: '-100vh', ease: "power.in" });
         gsap.from('.all2', { duration: 1, delay: 2, y: '100vh', ease: "power-5" });
         gsap.from('.all3', { duration: 6, delay: 3.4, y: '100vh', ease: "elastic" });
         gsap.from('#bg-2', { duration: 1, delay: 1, y: '100vh', ease: "power.in" });
