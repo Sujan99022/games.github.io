@@ -477,7 +477,18 @@ form button {
         opacity: 1;
     }
   }
-
+#opp{
+    opacity: 1;
+    animation: opp 1.5s linear 0s forwards normal running;
+}
+@keyframes opp {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
 
 /*   
   .hu__hu__ { animation: hu__hu__ infinite 2s ease-in-out }
